@@ -123,6 +123,8 @@
     50%{opacity:1;transform:translateY(-50%) scale(1.15);}
   }
   @media (prefers-reduced-motion: reduce){ .eyebrow::before{animation:none;} }
+  .eyebrow.no-dot{padding-left:0;}
+  .eyebrow.no-dot::before{content:none;}
 
   /* ---------- PULSING HALO behind portraits (box-shadow based; overflow:hidden-safe) ---------- */
   .guided-by-photo{animation:halo-pulse-a 3.6s ease-in-out infinite;}
@@ -313,7 +315,7 @@
 
 <section class="hero">
   <div class="wrap">
-    <span class="eyebrow" style="font-size:0.816rem;font-weight:700;">Professional Excellence Program</span>
+    <span class="eyebrow no-dot" style="font-size:0.816rem;">Professional Excellence Program</span>
     <h1 style="margin-top:14px;">Inner Mastery.<br><em>Outer Excellence.</em></h1>
     <p class="sub">A 6-day live program for professionals, guided by Gurudev Shri Rishi Praveen Ji.</p>
     <div class="hero-ctas">
