@@ -99,8 +99,12 @@
   .section-head p{color:var(--muted);margin-top:10px;font-size:0.92rem;}
 
   /* ---------- MEDITATIVE BREATHING DIVIDER ---------- */
-  .breath-divider{width:110px;height:110px;margin:48px auto;}
+  .breath-divider{width:110px;height:110px;margin:48px auto 0;}
   .breath-divider svg{width:100%;height:100%;}
+  .breath-caption{
+    text-align:center;font-family:'IBM Plex Mono',monospace;font-size:0.78rem;
+    letter-spacing:0.04em;color:var(--muted);margin:14px auto 48px;
+  }
   .breath-ring{fill:none;stroke-width:1.2;transform-origin:center;animation:breathe 6s ease-in-out infinite;}
   .breath-ring.r1{stroke:var(--gold-soft);}
   .breath-ring.r2{stroke:var(--navy-soft);animation-delay:-2s;opacity:0.7;}
@@ -347,6 +351,7 @@
     <circle cx="70" cy="70" r="4" fill="var(--gold)"/>
   </svg>
 </div>
+<p class="breath-caption">One on One Guidance by Trained Meditation Coaches</p>
 
 <section id="transformation" class="reveal" style="background:var(--bg-2);">
   <div class="wrap">
